@@ -78,3 +78,27 @@
 .logoquote{
     align-items: right;
 }
+
+/* Optimization for Mobile devices */
+
+@media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar form {
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .navbar form input {
+      width: 100%;
+    }
+  }
+  
