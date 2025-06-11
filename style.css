@@ -1,6 +1,6 @@
 /* Navbar */
 .navbar {
-    background-color: #edfdff;
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -25,28 +25,49 @@
 
 }
 
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #388E3C;
+}
+
+
 /* Search Icon Section */
-.search-form {
+/* Search box improvements */
+.navbar form {
     display: flex;
     align-items: center;
-    gap: 5px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3px 10px;
+    border: 2px solid #2e7d32;
 }
 
-.search-form input {
-
-    padding: 6px 10px;
+.navbar form input {
     border: none;
-    border-radius: 4px;
+    outline: none;
+    padding: 6px 8px;
+    font-size: 15px;
+    width: 180px;
+    border-radius: 20px;
 }
 
-.search-form button {
-    padding: 6px 10px;
+.navbar form button {
+    background: none;
     border: none;
-    background-color: #fff;
-    border-radius: 4px;
+    color: #2e7d32;
+    font-size: 18px;
     cursor: pointer;
+    padding: 4px 6px;
 }
-
 /* Logo */
 .logo {
     background-color: #f4f4f4;
