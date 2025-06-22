@@ -155,18 +155,19 @@ body {
 }
 
 /* Contact */
-#contact {
-  background: #e8f5e9;
-  padding: 30px;
-  text-align: center;
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
 }
 
 #contact-form input,
 #contact-form textarea {
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   padding: 10px;
-  margin: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
 }
