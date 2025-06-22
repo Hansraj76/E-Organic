@@ -84,16 +84,47 @@ body {
 
 /* Hero */
 .hero {
+  background: linear-gradient(rgba(0, 100, 0, 0.6), rgba(0, 100, 0, 0.6)),
+              url('images/hero.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
   text-align: center;
-  padding: 30px;
+  color: white;
 }
 
-.hero img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+
+.hero-text .highlight {
+  color: #A5D6A7;
+}
+
+.hero-text p {
+  font-size: 24px;
+  line-height: 1.5;
+  font-style: italic;
+}
+ /* Hero optional animations */
+ .hero-text h1 {
+  animation: fadeInDown 1s ease-out;
+}
+.hero-text p {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 /* Products */
 .products-section {
