@@ -1,40 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
-    <title>E-commerce</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Buy organic fruits, vegetables, and dairy products online at E-Organic. We ensure quality and freshness!">
+  <meta name="keywords" content="organic, fruits, vegetables, dairy, farm fresh, E-Organic">
+  <meta name="author" content="E-Organic Team">
+  <title>E-Organic</title>
+  <link rel="stylesheet" href="newstyle.css" />
 </head>
-
 <body>
-    <div class="logo">
-    <img src="logo.png" alt="Organic Logo">
-    <span class="logotext">E- Organic</span>
-    <!-- <span class="logoquote">Ensuring The Quality</span> -->
+  <header class="top-header">
+    <div class="brand-container">
+      <img src="logo.png" alt="E-Organic Logo" class="logo-img" />
+      <div class="brand-text">
+        <div class="site-title">E-<span class="green">Organic</span></div>
+        <div class="tagline">Ensuring<br>the<br>Quality</div>
+      </div>
     </div>
+    <form class="search-form">
+      <input type="text" placeholder="Search organic products...">
+      <button type="submit">🔍</button>
+    </form>
+  </header>
 
-    <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#productslist">Products</a></li>
-                <li><a href="#trackOrder">Track Order</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="#myaccount">My Account</a></li>
-            </ul>
-        </nav>
-        <form>
-            <input type="text" placeholder="Search...">
-            <button type="submit">🔍</button>
-        </form>
+  <nav class="navbar">
+    <button class="navbar-toggle">☰</button>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#account">My Account</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to E-Organic</h1>
+    <p>Your destination for healthy and organic living</p>
+    <img src="Organic Farm.jpg" alt="Organic Farm" />
+  </section>
+
+  <section class="products" id="products">
+    <h2>Popular Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="Organic Fruits.webp" alt="Organic Fruits">
+        <h3>Organic Fruits</h3>
+        <p>Fresh from farms, 100% organic</p>
+      </div>
+      <div class="product">
+        <img src="Organic Vegetables.webp" alt="Organic Vegetables">
+        <h3>Organic Vegetables</h3>
+        <p>Green and healthy veggies</p>
+      </div>
+      <div class="product">
+        <img src="Organic Dairy.jpg" alt="Organic Dairy">
+        <h3>Organic Dairy</h3>
+        <p>Pure and chemical-free milk</p>
+      </div>
     </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Why E-Organic?</h2>
+    <p>We are committed to bringing you the best organic products, supporting local farmers and ensuring a healthier lifestyle.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 E-Organic. All rights reserved.</p>
+  </footer>
+
+  <script src="newsscript.js"></script>
 </body>
-
 </html>
