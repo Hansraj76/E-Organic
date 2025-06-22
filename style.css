@@ -155,32 +155,99 @@ body {
 }
 
 /* Contact */
-#contact-form {
+.contact-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  padding: 20px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
 }
 
-#contact-form input,
-#contact-form textarea {
+.contact-banner {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.contact-page {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.contact-overlay {
+  background-color: rgba(0, 100, 0, 0.6); /* dark overlay */
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.contact-title {
   width: 100%;
-  max-width: 400px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.contact-title .green {
+  color: #A5D6A7;
+}
+
+
+.contact-banner p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contact-form-right {
+  flex: 1;
+  min-width: 320px;
+  max-width: 45%;
+  align-self: flex-start;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 128, 0, 0.1);
+  margin-left: auto; /* Pushes it to the right side */
+}
+
+.contact-form-right h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2e7d32;
+}
+
+.contact-form-right form input,
+.contact-form-right form textarea {
+  width: 100%;
+  margin-bottom: 15px;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  font-size: 14px;
 }
 
-#contact-form button {
+.contact-form-right form button {
   padding: 10px 20px;
-  background-color: #4CAF50;
-  border: none;
+  background-color: #43a047;
   color: white;
-  font-weight: bold;
+  border: none;
   border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
 }
+
+.contact-form-right form button:hover {
+  background-color: #388e3c;
+}
+
 
 /* Footer */
 .footer {
@@ -261,4 +328,34 @@ body {
     flex-direction: column;
     align-items: center;
   }
+}
+
+ /* Trust Box */
+.trust-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+  color: #2e7d32;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+}
+
+.trust-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 5px;
+}
+
+.trust-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.trust-box li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
