@@ -2,7 +2,6 @@
 
 // Handle search form submission
 const searchForm = document.querySelector('.search-form');
-
 if (searchForm) {
   searchForm.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -17,7 +16,6 @@ if (searchForm) {
 
 // Scroll to section functionality for navbar links
 const navLinks = document.querySelectorAll('.navbar a[href^="#"]');
-
 navLinks.forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
@@ -104,7 +102,7 @@ structuredData.textContent = JSON.stringify({
 });
 document.head.appendChild(structuredData);
 
-// Blog section reveal (for future extension)
+// Blog section reveal
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -116,3 +114,11 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.blog-post').forEach(post => {
   observer.observe(post);
 });
+
+// WhatsApp Chat Button
+const whatsappButton = document.createElement('a');
+whatsappButton.href = "https://wa.me/911234567890";
+whatsappButton.className = 'whatsapp-button';
+whatsappButton.target = '_blank';
+whatsappButton.innerHTML = '💬';
+document.body.appendChild(whatsappButton);
