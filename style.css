@@ -85,7 +85,7 @@ body {
 /* Hero */
 .hero {
   background: linear-gradient(rgba(0, 100, 0, 0.6), rgba(0, 100, 0, 0.6)),
-              url('images/hero.jpg') no-repeat center center/cover;
+              url('organicfarm.jpg') no-repeat center center/cover;
   padding: 80px 20px;
   text-align: center;
   color: white;
