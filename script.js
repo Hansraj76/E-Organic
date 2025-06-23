@@ -16,18 +16,29 @@ if (searchForm) {
 
 // Scroll to section functionality for navbar links
 const navLinks = document.querySelectorAll('.navbar a[href^="#"]');
+
 navLinks.forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+
     if (target) {
+      // Dynamically detect navbar height
+      const navbar = document.querySelector('.navbar');
+      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 80;
+
+      const scrollPosition = target.offsetTop - navbarHeight;
+
       window.scrollTo({
-        top: target.offsetTop - 80,
+        top: scrollPosition,
         behavior: 'smooth'
       });
     }
   });
 });
+
 
 // Product hover animation
 const products = document.querySelectorAll('.product');

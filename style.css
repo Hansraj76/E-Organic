@@ -381,3 +381,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
+/* Scroll Margin */
+
+section {
+  scroll-margin-top: 100px; /* Adjusts scroll position correctly */
+}
